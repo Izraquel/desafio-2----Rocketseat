@@ -1,0 +1,213 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body {
+        background-color: rgb(18, 18, 20);
+/*     background-color: #282a36;
+ */    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+header {
+    background-color: rgb(29, 29, 29);
+
+    padding: 8px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 52px;
+    font-size: 18px;
+}
+header a:hover {
+    color: rgb(42, 164, 212) ;
+    transition: color 800ms;
+}
+
+.titulo a {
+    padding-left: 260px;
+} 
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.logo_ro img {
+    cursor: pointer;
+    max-width: 58px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+
+
+/* CONTEUDOS */
+
+.cards {
+/*     max-width: 1220px;
+ */    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;     
+    padding: 24px;
+}
+.cards #primeiro:hover {
+    display: block;
+    transition: color 15ms; 
+    border-radius: 5px;
+    border: 1.5px solid #7159c1;
+
+    cursor: pointer;
+
+}
+.cards #segundo:hover {
+    display: block;
+    transition: color 15ms;
+    border-radius: 5px;
+    border: 1.5px solid #fd951f;
+
+    cursor: pointer;
+
+} 
+.cards #terceiro:hover  {
+    display: block;
+    transition: color 15ms;
+    border-radius: 5px;
+    border: 1.5px solid #04d361;
+
+    cursor: pointer;
+
+} 
+.card{
+    text-align: center;
+    background-color: rgb(29, 29, 29);
+    /* #282a36 */
+    border-radius: 5px;
+}
+.card_img img {
+    width: 180px;
+    padding: 50px;
+
+    margin: 0;
+}
+.card_content {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+/* #primeiro img {
+    width: 180px;
+    padding: 50px;
+
+    margin: 0;
+} */
+#segundo img {
+
+    width: 275px;
+    padding: 50px;
+
+    margin: 0;
+}
+/* #terceiro img {
+    width: 180px;
+    padding: 56px;
+
+    margin: 0;
+} */
+#primeiro .card_img p {
+    text-align: center;
+
+    color: #7159c1;
+    height: 50px;
+    padding: 20px;
+}
+#segundo .card_img p {
+    text-align: center;
+
+    color: #fd951f;
+    height: 50px;
+    padding: 20px;
+}
+#terceiro .card_img p {
+    text-align: center;
+
+    color: #04d361;
+    height: 50px;
+    padding: 20px;
+}
+
+#primeiro strong {
+    text-align: center;
+    text-decoration: none;
+    color: #7159c1;
+}
+#segundo strong {
+    text-align: center;
+    text-decoration: none;
+    color: #fd951f 
+}
+#terceiro strong {
+    text-align: center;
+    text-decoration: none;
+    color: #04d361;
+}
+.card_content,
+.card_info {
+    text-align: center;
+    padding: 24px;
+}
+.card_info p{
+    text-align: center;
+}
+
+/* ===== MODAL===== */
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+
+    visibility: hidden;
+}
+.modal {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+.modal .close-modal i {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+.modal .close-modal span {
+    color: black;
+    position: absolute;
+    padding-left: 1150px;
+    right: 40px;
+    top: 8px;
+    cursor: pointer;
+    
+}
+/* ===== MODAL ativoo===== */
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+} 
+
+.modal-content iframe {
+    width: 100%;
+    height: 100%;
+    margin: 5vh auto;
+}
