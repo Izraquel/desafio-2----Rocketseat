@@ -184,14 +184,14 @@ header a:hover {
     margin: 5vh auto;
     position: relative;
 }
-.modal .close-modal i {
+.close-modal i {
     color: black;
     position: absolute;
     right: 8px;
     top: 8px;
     cursor: pointer;
 }
-.modal .close-modal span {
+.maxi-modal span {
     color: black;
     position: absolute;
     padding-left: 1150px;
@@ -206,8 +206,22 @@ header a:hover {
     visibility: visible;
 } 
 
-.modal-content iframe {
+/* ==== MODAL maxi */
+/* .modal .maxi-modal {
     width: 100%;
     height: 100%;
-    margin: 5vh auto;
+    margin: 0 auto;
+    border-radius: 0;
+    left: 0; 
+}
+ */
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 6%;
+}
+
+.close-modal .material-icons {
+    font-size: 29px;
 }
